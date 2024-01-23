@@ -1,0 +1,342 @@
+.text_pink {
+    color: #876868;
+}
+
+.text_dpink {
+    color: #FFAEAE;
+}
+
+.text_red {
+    color: #2E0A0A;
+}
+
+.text_bloodred {
+    color: #B30000;
+}
+
+.bg_red {
+    background-color: #2E0A0A;
+}
+
+.bg_pink {
+    background-color: #FFAEAE;
+}
+
+.bg_bloodred {
+    background-color: #B30000;
+}
+
+.inp1 {
+    padding: 16px 0px 16px 0px;
+    background: transparent;
+    color: #AC9393;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    border-bottom: 1px solid #AC9393;
+    width: 100%;
+}
+
+.inp1::placeholder {
+    color: #AC9393;
+}
+
+.btn_red {
+    padding: 10px 8px;
+    background-color: transparent;
+    border: 2px solid #B30000;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.error {
+    background-image: url(media/error.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.terms {
+    background-image: url(media/footer.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.order {
+    background-image: url(media/OrdersD.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.payment {
+    background-image: url(media/payment.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.login {
+    background-image: url(media/logsign.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.signP {
+    background-image: url(media/Signpop.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.errorPad {
+    padding: 300px 0px;
+}
+
+.logPad {
+    padding: 200px 0px 50px 0px;
+}
+
+.box8 {
+    padding: 8px 16px;
+}
+
+.box16 {
+    padding: 16px 32px;
+}
+
+.bord {
+    border-bottom: 1px solid #2E0A0A;
+}
+
+.bord1 {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.bord2 {
+    border-bottom: 1px solid #FFAEAE;
+}
+
+.bord2 {
+    border-bottom: 1px solid #B30000;
+}
+
+.box {
+    padding: 32px;
+    background-color: #F2F2F2;
+    width: 50%;
+}
+
+.boxB {
+    padding: 32px;
+    background-color: #F2F2F2;
+}
+
+.iconStyle {
+    position: absolute;
+    margin-left: -48px;
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    padding: 10px 10px;
+    color: #9B9B9B;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.cards {
+    padding: 52px 32px;
+    background-color: none;
+    border: 2px solid #FFAEAE;
+}
+
+.card1 {
+    padding: 20px 32px 7px 40px;
+    background-color: none;
+    border: 2px solid #FFAEAE;
+}
+
+.owl-carousel .item {
+    padding: 0px 8px;
+}
+
+.cards:hover {
+    transform: scale(1, 1.1);
+    transition: transform 1.2s ease-in-out;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+}
+
+.CR1 {
+    background-image: url(media/em2bg.png);
+    background-position-x: center;
+    background-size: cover;
+}
+
+.CR2 {
+    background-image: url(media/About.png);
+    background-position-x: center;
+    background-size: cover;
+}
+
+.CR3 {
+    background-image: url(media/CR3.png);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card2 {
+    padding: 40px 32px;
+    background-color: #FFAEAE;
+}
+
+.card3 {
+    padding: 20px 32px;
+    background-color: transparent;
+    /* border: 2px solid #B30000; */
+    /* width: 458px;
+    padding: 50px 40px; */
+    background-repeat: no-repeat;
+    background-image: url(media/Cardsbg.png);
+    background-size: 100% 100%;
+    text-align: center;
+    background-position-x: center;
+    transition: all .3s;
+}
+
+.SER {
+    background-image: url(media/SER.png);
+    background-position-x: center;
+    background-size: cover;
+}
+
+.table>:not(caption)>*>* {
+    background-color: transparent!important;
+}
+
+tbody td {
+    padding: 20px 10px!important;
+    border: none;
+}
+
+thead td {
+    border: none!important;
+}
+
+.FAQ1 {
+    background-image: url(media/FAQ1.png);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.FAQ2 {
+    background-image: url(media/FAQ2.png);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1300px) {
+    .w90hd {
+        width: 90%;
+    }
+    .w65 {
+        width: 64%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .error {
+        background-image: url(media/errorM.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+    .errorPad {
+        padding: 70px 0px 120px 0px;
+    }
+    .logPad {
+        padding: 125px 0px 50px 0px;
+    }
+    .terms {
+        background-image: url(media/termsM.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+    .order {
+        background-image: url(media/OrdersM.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+    .login {
+        background-image: url(media/logsignM.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+    .border {
+        border: 1px solid #C8C8C8;
+    }
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .box {
+        padding: 24px;
+        width: 100%;
+    }
+    .cards {
+        padding: 32px 32px;
+        background-color: none;
+        border: 2px solid #FFAEAE;
+    }
+    .table {
+        width: 700px
+    }
+    .CR3 {
+        background-image: url(media/CR3M.png);
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .CR2 {
+        background-image: url(media/AboutM.png);
+        background-position-x: center;
+        background-size: cover;
+    }
+    .FAQ1 {
+        background-image: url(media/FAQ1M.png);
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .FAQ2 {
+        background-image: url(media/FAQ2M.png);
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .fs16 {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .fs18 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .fs20 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .fs24 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .fs56 {
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .fs72 {
+        font-size: 32px;
+        font-weight: 400;
+    }
+}

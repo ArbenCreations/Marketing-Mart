@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' integrity='sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==' crossorigin='anonymous' />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Secure checkout</title>
+</head>
+
+<body>
+    <div class="container-fluid px-sm-0 px-3 position-fixed top-0">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-4">
+            <nav class="navbar navbar-expand-sm text-white">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand desktop">
+                        <img src="media/logo.svg" class="">
+                    </a>
+                    <a class="navbar-brand mobile">
+                        <img src="media/logoM.svg" class="">
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="" class="mobile">
+                            <img src="media/person.svg" class="">
+                        </a>
+                        <a href="" class="mobile">
+                            <img src="media/cart.svg" class="">
+                        </a>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+	                        <img src="media/menu_icon.svg" class="img-fluid">
+	                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-between pt-sm-0 pt-3" id="mynavbar">
+                        <ul class="navbar-nav nav1 text-center">
+                            <li class="nav-item py-2 position-relative text-center">
+                                <a class="nav-link dropdown-toggle fsN18 d-flex gap-2 align-items-center p-0 text_white1 justify-content-center int" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center">Services</div>
+                                    <img src="media/drop.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu gb border-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="py-2 border-0">
+                                        <li class="">
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item text_white1" href="#">
+                                                <div>Social Media Content</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item text_white1 active" href="#">
+                                                <div>Creative writing</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item text_white1" href="#">
+                                                <div>Corporate copy</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item text_white1" href="#">
+                                                <div>Advertising drafting</div>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fsN18 text_white1 int" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fsN18 text_white1 int" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item  border-0">
+                                <a class="nav-link fsN18 text_white1 int" href="#">Log in/sign up</a>
+                            </li>
+                            <li class="nav-item  border-0">
+                                <a class="nav-link fsN18 text_white1 int" href="#">Cart<badge>(0)</badge></a>
+                            </li>
+                            <li class="nav-item  py-2 position-relative">
+                                <a class="nav-link dropdown-toggle fsN18 d-flex gap-2 align-items-center p-0 text_white1 justify-content-center int" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center">GBR</div>
+                                    <img src="media/drop.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu gb border-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="py-2 border-0">
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item text_white1" href="#">
+                                                <div><img src="media/Dollar Banknote.png" alt=""></div>USD</a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item text_white1 active" href="#">
+                                                <div><img src="media/Pound Banknote.png" alt=""></div>GBR</a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item text_white1" href="#">
+                                                <div><img src="media/Euro Banknote.png" alt=""></div>EU</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav nav2 align-items-center gap-2">
+                            <button type="button" class="border_btn px-3 wNav">Contact us</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid terms seom pt-5">
+        <div class="container py-xl-5 pt-5 ">
+            <div class="col-xxl-9 col-xl-9 w90hd mx-auto text-center py-5 px-xl-4 mt-0 w1900 l-90">
+                <div class="fs72 text_white1 pb-sm-3 pt-xl-5 pb-3 lh-sm mt-xl-3">(SEO) search <br> engine optimisation</div>
+                <p class="text_grey fs18 pb-sm-2 col-xxl-11 col-xl-12 mx-auto">Lorem ipsum dolor sit amet consectetur. Amet tortor proin sem nibh. Consequat quam gravida massa quis commodo. Nec et aliquam metus nam gravida volutpat vitae ligula quam. Duis faucibus aliquet.</p>
+                <a href="#" class="bord2 fs20 text_dpink col-xxl-4 col-xl-6 text-center mx-auto text-decoration-none">Explore packages and pricing</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-sm-5 py-3 px-sm-0 px-3 CR1">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-4 w1900">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="col-xxl-10 w90hd w1">
+                        <div class="fs56 text_red lh-sm pb-sm-4 pb-3">What is SEO?</div>
+                        <div class="col-lg-11 pe-sm-3">
+                            <p class="fs18 text_pink">Lorem ipsum dolor sit amet consectetur. Amet tortor proin sem nibh. Consequat quam gravida massa quis commodo. Nec et aliquam metus nam gravida volutpat vitae ligula quam. Duis faucibus aliquet ridiculus nulla faucibus vitae
+                                integer. Suspendisse sem adipiscing auctor pulvinar.</p>
+                            <p class="fs18 text_pink mb-0">Convallis ultrices vitae sapien in. Sit ornare mi purus integer imperdiet volutpat. Auctor adipiscing tincidunt in pellentesque facilisi auctor facilisis. Arcu interdum varius tempus eu ut nam sagittis. Diam sollicitudin risus
+                                neque felis in lectus. Maecenas mauris arcu vitae a convallis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-sm-0 mt-2">
+                    <img src="media/seo.png" class="img-fluid d-block ms-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid white py-sm-5 py-2 px-sm-0 px-3">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-4">
+            <div class="fs56 text_2E0A0A text-center pb-sm-4 pb-3 lh-sm">Included in our SEO packages</div>
+            <p class="col-xxl-4 col-xl-5 text_876868 fs18 text-center mx-auto pb-sm-5 pb-4">Lorem ipsum dolor sit amet consectetur. Mauris sed cras suspendisse id. Pulvinar in donec rhoncus nec.</p>
+            <div class="owl-carousel owl-theme oc2" id="owl1">
+                <div class="item">
+                    <div class="card1">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <g clip-path="url(#clip0_5462_3629)">
+                                  <path d="M21 29C21 29.5523 20.5523 30 20 30C19.4477 30 19 29.5523 19 29C19 28.4477 19.4477 28 20 28C20.5523 28 21 28.4477 21 29Z" fill="#B30000"/>
+                                  <path d="M14 15C14 12.3136 16.6047 10 20 10C23.3953 10 26 12.3136 26 15C26 17.0413 24.5126 18.8543 22.2923 19.6214C20.8836 20.1081 19.5 21.3183 19.5 23V25.5H20.5V23C20.5 21.9202 21.4176 20.9816 22.6189 20.5666C25.1436 19.6943 27 17.5634 27 15C27 11.6113 23.7844 9 20 9C16.2156 9 13 11.6113 13 15H14Z" fill="#B30000"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM20 39C30.4934 39 39 30.4934 39 20C39 9.50659 30.4934 1 20 1C9.50659 1 1 9.50659 1 20C1 30.4934 9.50659 39 20 39Z" fill="#B30000"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_5462_3629">
+                                    <rect width="40" height="40" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </div>
+                        <div class="fs20 text_red py-3 lh-sm">Keyword analysis</div>
+                        <p class="fs18 text_pink">At tortor in molestie augue dictum. Aliquet vitae dignissim morbi tempor purus. Nisi, diam sapien, ornare sit in. Ipsum lorem in nunc, varius porttitor faucibus imperdiet ornare. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card1">
+                        <img src="media/seCAr2.png">
+                        <div class="fs20 text_red py-4">Technical optimisation</div>
+                        <p class="fs18 text_pink">At tortor in molestie augue dictum. Aliquet vitae dignissim morbi tempor purus. Nisi, diam sapien, ornare sit in. Ipsum lorem in nunc, varius porttitor faucibus imperdiet ornare. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card1">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <g clip-path="url(#clip0_5462_6372)">
+                                  <path d="M9.74285 3.83145C11.0681 3.28253 12.4884 3 13.9228 3C15.3572 3 16.7776 3.28253 18.1028 3.83145C19.428 4.38038 20.6322 5.18495 21.6464 6.19923L22.3536 5.49212C21.2464 4.38498 19.9321 3.50675 18.4855 2.90757C17.039 2.30839 15.4886 2 13.9228 2C12.3571 2 10.8067 2.30839 9.36016 2.90757C7.91362 3.50675 6.59926 4.38498 5.49212 5.49212C4.38498 6.59925 3.50675 7.91362 2.90757 9.36016C2.30839 10.8067 2 12.3571 2 13.9228C2 15.4886 2.30839 17.039 2.90757 18.4855C3.50675 19.9321 4.38498 21.2464 5.49212 22.3536L6.19922 21.6464C5.18495 20.6322 4.38037 19.428 3.83145 18.1028C3.28253 16.7776 3 15.3572 3 13.9228C3 12.4884 3.28253 11.0681 3.83145 9.74285C4.38038 8.41763 5.18495 7.2135 6.19923 6.19922C7.2135 5.18494 8.41763 4.38037 9.74285 3.83145Z" fill="#B30000"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M28 14C28 17.3037 26.8557 20.3402 24.9417 22.7346L28.0386 25.8315C29.0974 25.5357 30.2798 25.7973 31.1219 26.6192L39.9614 35.2457L35.2457 39.9614L26.6192 31.1219C25.7973 30.2798 25.5357 29.0974 25.8315 28.0386L22.7346 24.9417C20.3402 26.8557 17.3037 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM27 14C27 21.1797 21.1797 27 14 27C6.8203 27 1 21.1797 1 14C1 6.8203 6.8203 1 14 1C21.1797 1 27 6.8203 27 14ZM26.2848 27.0777C26.3907 26.9261 26.5112 26.7817 26.6464 26.6464C26.7817 26.5112 26.9261 26.3907 27.0777 26.2848L24.288 23.4952C24.0344 23.7699 23.7699 24.0344 23.4952 24.288L26.2848 27.0777ZM27.3536 27.3536C28.1992 26.5079 29.5676 26.4996 30.4235 27.3348L38.5386 35.2543L35.2543 38.5386L27.3348 30.4235C26.4996 29.5676 26.5079 28.1992 27.3536 27.3536Z" fill="#B30000"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_5462_6372">
+                                    <rect width="40" height="40" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </div>
+                        <div class="fs20 text_red py-4">Content optimisation</div>
+                        <p class="fs18 text_pink">At tortor in molestie augue dictum. Aliquet vitae dignissim morbi tempor purus. Nisi, diam sapien, ornare sit in. Ipsum lorem in nunc, varius porttitor faucibus imperdiet ornare. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card1">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2732 21.1492C25.3039 20.1863 27.4997 17.3496 27.4997 14C27.4997 9.85786 24.1418 6.5 19.9997 6.5C15.8576 6.5 12.4997 9.85786 12.4997 14C12.4997 17.3496 14.6955 20.1863 17.7262 21.1492C10.9298 22.0486 5.38945 26.9243 3.51956 33.3605L4.47986 33.6395C6.43358 26.9147 12.6431 22 19.9997 22C27.3564 22 33.5658 26.9147 35.5196 33.6395L36.4799 33.3605C34.61 26.9243 29.0696 22.0486 22.2732 21.1492ZM26.4997 14C26.4997 17.5899 23.5896 20.5 19.9997 20.5C16.4099 20.5 13.4997 17.5899 13.4997 14C13.4997 10.4101 16.4099 7.5 19.9997 7.5C23.5896 7.5 26.4997 10.4101 26.4997 14Z" fill="#B30000"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.4997 15.5C37.4997 17.1263 36.5291 18.526 35.1356 19.1513C36.9749 19.4958 38.6134 20.4105 39.8598 21.7041L39.1396 22.3979C37.7148 20.9191 35.7151 20 33.4997 20C31.2844 20 29.2846 20.9191 27.8598 22.3979L27.1396 21.7041C28.386 20.4105 30.0245 19.4958 31.8638 19.1513C30.4703 18.526 29.4997 17.1263 29.4997 15.5C29.4997 13.2909 31.2906 11.5 33.4997 11.5C35.7089 11.5 37.4997 13.2909 37.4997 15.5ZM36.4997 15.5C36.4997 17.1569 35.1566 18.5 33.4997 18.5C31.8429 18.5 30.4997 17.1569 30.4997 15.5C30.4997 13.8431 31.8429 12.5 33.4997 12.5C35.1566 12.5 36.4997 13.8431 36.4997 15.5Z" fill="#B30000"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13562 19.1513C9.52914 18.526 10.4997 17.1263 10.4997 15.5C10.4997 13.2909 8.70885 11.5 6.49971 11.5C4.29057 11.5 2.49971 13.2909 2.49971 15.5C2.49971 17.1263 3.47029 18.526 4.8638 19.1513C3.02452 19.4958 1.38598 20.4105 0.139648 21.7041L0.859774 22.3979C2.28463 20.9191 4.28435 20 6.49971 20C8.71507 20 10.7148 20.9191 12.1396 22.3979L12.8598 21.7041C11.6134 20.4105 9.9749 19.4958 8.13562 19.1513ZM6.49971 18.5C8.15656 18.5 9.49971 17.1569 9.49971 15.5C9.49971 13.8431 8.15656 12.5 6.49971 12.5C4.84286 12.5 3.49971 13.8431 3.49971 15.5C3.49971 17.1569 4.84286 18.5 6.49971 18.5Z" fill="#B30000"/>
+                          </svg>
+                        </div>
+                        <div class="fs20 text_red py-4">Competitor analysis</div>
+                        <p class="fs18 text_pink">At tortor in molestie augue dictum. Aliquet vitae dignissim morbi tempor purus. Nisi, diam sapien, ornare sit in. Ipsum lorem in nunc, varius porttitor faucibus imperdiet ornare. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-sm-5 py-3 px-sm-0 px-3 CR2">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-4">
+            <div class="row align-items-center py-xl-4">
+                <div class="col-lg-6 mt-sm-0 mt-2">
+                    <img src="media/seo2.png" class="img-fluid">
+                </div>
+                <div class="col-lg-6 pt-sm-0 pt-4">
+                    <div class="col-xxl-11 w90hd">
+                        <div class="fs56 text_white1 lh-sm pb-sm-4 pb-3">Unleash growth: <br> explore innovative marketing with us</div>
+                        <div class="col-lg-12 pe-xl-4">
+                            <p class="fs18 text_grey">Lorem ipsum dolor sit amet consectetur. Amet tortor proin sem nibh. Consequat quam gravida massa quis commodo. Nec et aliquam metus nam gravida volutpat vitae ligula quam. Duis faucibus aliquet ridiculus nulla faucibus vitae
+                                integer. Suspendisse sem adipiscing auctor pulvinar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid white py-sm-5 py-2 px-sm-0 px-3">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-4">
+            <div class="fs56 text_purple text-center pb-sm-4 pb-3 lh-sm">How it works?</div>
+            <p class="col-xxl-4 col-xl-5 text_pink fs18 text-center mx-auto pb-sm-5 pb-4">Lorem ipsum dolor sit amet consectetur. Mauris sed cras suspendisse id. Pulvinar in donec rhoncus nec.</p>
+            <div class="owl-carousel owl-theme oc32" id="owl2">
+                <div class="item">
+                    <div class="card2">
+                        <img src="media/cart1.png">
+                        <div class="fs20 text_red py-xxl-4  py-2 lh-sm">Create an accountt</div>
+                        <p class="fs18 text_pink">Lorem ipsum dolor sit amet consectetur. Pellentesque diam cras accumsan sed arcu. Lobortis in convallis consequat nisl. Lobortis in convallis diam cras accumsan sed nisl.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card2">
+                        <img src="media/bulb.png">
+                        <div class="fs20 text_red py-xxl-4  py-2">Explore our services</div>
+                        <p class="fs18 text_pink">Lorem ipsum dolor sit amet consectetur. Pellentesque diam cras accumsan sed arcu. Lobortis in convallis consequat nisl. Lobortis in convallis diam cras accumsan sed nisl.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card2">
+                        <img src="media/card.png">
+                        <div class="fs20 text_red py-xxl-4  py-2">Leave the rest to us</div>
+                        <p class="fs18 text_pink">Lorem ipsum dolor sit amet consectetur. Pellentesque diam cras accumsan sed arcu. Lobortis in convallis consequat nisl. Lobortis in convallis diam cras accumsan sed nisl.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid SER pt-xl-4 pb-xl-5">
+        <div class="col-xxl-9 col-xl-11 w65 mx-auto text-center py-5 px-4">
+            <div class="fs56 text_white1 py-sm-3 pb-3">SEO packages and pricing</div>
+            <p class="text_grey fs18 pb-sm-4 col-xxl-7 col-xl-9 mx-auto pb-sm-2 pb-4">Lorem ipsum dolor sit amet consectetur. Amet tortor proin sem nibh. Consequat quam gravida massa quis commodo. Nec et aliquam metus nam gravida volutpat vitae ligula quam. Duis faucibus aliquet.</p>
+            <div class="desktop">
+                <nav>
+                    <div class="nav nav-tabs mb-3 border-0 btnBig " id="nav-tab" role="tablist">
+                        <button class="nav-link btnC wNav fs20 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">1 Month</button>
+                        <button class="nav-link btnC wNav fs20" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">2 Month</button>
+                        <button class="nav-link btnC wNav fs20" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">3 Month</button>
+                        <button class="nav-link btnC wNav fs20" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact1" aria-selected="false">4 Month</button>
+                    </div>
+                </nav>
+                <!-- <div class="btn-group bg-white border-0 btnBig ">
+                    <button type="button" class="btnC wNav fs20 text_red">1 Month</button>
+                    <button type="button" class="btnC wNav fs20 text_red">2 Month</button>
+                    <button type="button" class="btnC wNav fs20 text_white1 bg_bloodred">3 Month</button>
+                    <button type="button" class="btnC wNav fs20 text_red">4 Month</button>
+                </div> -->
+            </div>
+
+
+            <div class="mobile position-relative">
+                <!-- <div class="nav nav-tabs mb-3 border-0 btnBig " id="nav-tab" role="tablist"> -->
+                <select name="" id="sl2" class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <option value="nav-home"><button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">1 Month</button>
+                    </option>
+                    <option value="nav-profile">
+                        <button class="nav-link btnC wNav fs20" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">2 Month</button>
+
+                    </option>
+                    <option value="nav-contact">
+                        <button class="nav-link btnC wNav fs20" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">3 Month</button>
+
+                    </option>
+                    <option value="nav-contact1">
+                        <button class="nav-link btnC wNav fs20" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact1" aria-selected="false">4 Month</button>
+
+                    </option>
+                </select>
+                <!-- </div> -->
+                <div class="position-absolute icd">
+                    <img src="media/CaretDown.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="tab-content p-3 border bg-light px-0" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <div class="col-xxl-9 col-xl-12  w90_hd mx-auto text-center py-5">
+                    <div class="table-responsive table-stripped">
+                        <table class="table table-striped table-light">
+                            <thead class="mb-5">
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Bronze</div>
+                                        <div class="fs56 text_red pb-5">$99</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Silver</div>
+                                        <div class="fs56 text_red pb-5">$399</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Gold</div>
+                                        <div class="fs56 text_red pb-5">$599</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Diamond</div>
+                                        <div class="fs56 text_red pb-5">$999</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Master</div>
+                                        <div class="fs56 text_red pb-5">$1999</div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-4">
+                                        <div class="fs20 text_red text-start">Free Setup</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Audits</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog / News Site Outreach</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">National / International SEO</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Press Release Creation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Keyword Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Your Keyword / Phrase</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Link Building</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Content Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Monthly Blog Posts</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Competitor Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Technical Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Support, 7 Days a week</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Daily Keyword Monitoring</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">No Contract, Cancel Anytime</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Detailed Monthly Reports</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="col-xxl-9 col-xl-12  w90_hd mx-auto text-center py-5">
+                    <div class="table-responsive table-stripped">
+                        <table class="table table-striped table-light">
+                            <thead class="mb-5">
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Bronze</div>
+                                        <div class="fs56 text_red pb-5">$99</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Silver</div>
+                                        <div class="fs56 text_red pb-5">$399</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Gold</div>
+                                        <div class="fs56 text_red pb-5">$599</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Diamond</div>
+                                        <div class="fs56 text_red pb-5">$999</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Master</div>
+                                        <div class="fs56 text_red pb-5">$1999</div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-4">
+                                        <div class="fs20 text_red text-start">Free Setup</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Audits</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog / News Site Outreach</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">National / International SEO</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Press Release Creation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Keyword Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Your Keyword / Phrase</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Link Building</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Content Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Monthly Blog Posts</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Competitor Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Technical Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Support, 7 Days a week</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Daily Keyword Monitoring</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">No Contract, Cancel Anytime</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Detailed Monthly Reports</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="col-xxl-9 col-xl-12  w90_hd mx-auto text-center py-5">
+                    <div class="table-responsive table-stripped">
+                        <table class="table table-striped table-light">
+                            <thead class="mb-5">
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Bronze</div>
+                                        <div class="fs56 text_red pb-5">$99</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Silver</div>
+                                        <div class="fs56 text_red pb-5">$399</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Gold</div>
+                                        <div class="fs56 text_red pb-5">$599</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Diamond</div>
+                                        <div class="fs56 text_red pb-5">$999</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Master</div>
+                                        <div class="fs56 text_red pb-5">$1999</div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-4">
+                                        <div class="fs20 text_red text-start">Free Setup</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Audits</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog / News Site Outreach</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">National / International SEO</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Press Release Creation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Keyword Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Your Keyword / Phrase</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Link Building</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Content Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Monthly Blog Posts</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Competitor Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Technical Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Support, 7 Days a week</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Daily Keyword Monitoring</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">No Contract, Cancel Anytime</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Detailed Monthly Reports</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact1-tab">
+                <div class="col-xxl-9 col-xl-12  w90_hd mx-auto text-center py-5">
+                    <div class="table-responsive table-stripped">
+                        <table class="table table-striped table-light">
+                            <thead class="mb-5">
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Bronze</div>
+                                        <div class="fs56 text_red pb-5">$99</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Silver</div>
+                                        <div class="fs56 text_red pb-5">$399</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Gold</div>
+                                        <div class="fs56 text_red pb-5">$599</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Diamond</div>
+                                        <div class="fs56 text_red pb-5">$999</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs18 text_pink">Master</div>
+                                        <div class="fs56 text_red pb-5">$1999</div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-4">
+                                        <div class="fs20 text_red text-start">Free Setup</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Audits</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog / News Site Outreach</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">National / International SEO</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Press Release Creation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Keyword Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Your Keyword / Phrase</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Link Building</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Content Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Blog Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Monthly Blog Posts</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Competitor Analysis</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Technical Optimisation</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Support, 7 Days a week</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/tick.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Daily Keyword Monitoring</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">No Contract, Cancel Anytime</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="fs20 text_red text-start">Detailed Monthly Reports</div>
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <img src="media/cross.png" class="img-fluid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                    <td>
+                                        <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-xxl-9 col-xl-12  w90_hd mx-auto text-center py-5">
+            <div class="table-responsive table-stripped">
+                <table class="table table-striped table-light">
+                    <thead class="mb-5">
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="fs18 text_pink">Bronze</div>
+                                <div class="fs56 text_red pb-5">$99</div>
+                            </td>
+                            <td>
+                                <div class="fs18 text_pink">Silver</div>
+                                <div class="fs56 text_red pb-5">$399</div>
+                            </td>
+                            <td>
+                                <div class="fs18 text_pink">Gold</div>
+                                <div class="fs56 text_red pb-5">$599</div>
+                            </td>
+                            <td>
+                                <div class="fs18 text_pink">Diamond</div>
+                                <div class="fs56 text_red pb-5">$999</div>
+                            </td>
+                            <td>
+                                <div class="fs18 text_pink">Master</div>
+                                <div class="fs56 text_red pb-5">$1999</div>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-4">
+                                <div class="fs20 text_red text-start">Free Setup</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Audits</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Blog / News Site Outreach</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">National / International SEO</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Press Release Creation</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Keyword Analysis</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Your Keyword / Phrase</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Link Building</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Content Optimisation</div>
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Blog Optimisation</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Monthly Blog Posts</div>
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Competitor Analysis</div>
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Technical Optimisation</div>
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Support, 7 Days a week</div>
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/tick.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Daily Keyword Monitoring</div>
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">No Contract, Cancel Anytime</div>
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="fs20 text_red text-start">Detailed Monthly Reports</div>
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                            <td>
+                                <img src="media/cross.png" class="img-fluid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10">Add to cart</div>
+                            </td>
+                            <td>
+                                <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                            </td>
+                            <td>
+                                <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                            </td>
+                            <td>
+                                <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                            </td>
+                            <td>
+                                <div class="fs20 text_bloodred carBTNA borC bord2 col-lg-10 mx-auto">Add to cart</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> -->
+    </div>
+    <div class="container-fluid CR3 py-sm-0 pt-5 pb-xl-3 pb-2 px-0">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-sm-4 pt-5 pb-2 px-4">
+            <div class="col-lg-6 ms-auto pt-sm-5 pt-5 pb-1">
+                <div class="col-lg-11 ms-auto pt-xl-0 pt-5 ps-xl-2 ">
+                    <div class="fs56 text_white1 pb-xl-4 pb-2  pt-xl-0 pt-5">Custom request of marketing package</div>
+                    <input type="text" name="" placeholder="Full name" class="mb-xl-4 mb-2 inp1">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" name="" placeholder="Phone" class="mb-xl-4 mb-2 inp1">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" name="" placeholder="Email" class="mb-xl-4 mb-2 inp1">
+                        </div>
+                    </div>
+                    <div class="inp1 mb-3">
+                        <input type="file" id="upload" class="d-none" name="" placeholder="fff">
+                        <label for="upload" class="d-flex justify-content-between align-items-center">
+                            <span>
+                                Upload a brief file (Max 5Mb. In this format: .pdf, .docx)
+                            </span>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21.375 14.25V19.5C21.375 19.9973 21.1775 20.4742 20.8258 20.8258C20.4742 21.1775 19.9973 21.375 19.5 21.375H4.5C4.00272 21.375 3.52581 21.1775 3.17417 20.8258C2.82254 20.4742 2.625 19.9973 2.625 19.5V14.25C2.625 13.9516 2.74353 13.6655 2.9545 13.4545C3.16548 13.2435 3.45163 13.125 3.75 13.125C4.04837 13.125 4.33452 13.2435 4.5455 13.4545C4.75647 13.6655 4.875 13.9516 4.875 14.25V19.125H19.125V14.25C19.125 13.9516 19.2435 13.6655 19.4545 13.4545C19.6655 13.2435 19.9516 13.125 20.25 13.125C20.5484 13.125 20.8345 13.2435 21.0455 13.4545C21.2565 13.6655 21.375 13.9516 21.375 14.25ZM11.2041 15.0459C11.3086 15.1508 11.4328 15.234 11.5695 15.2908C11.7063 15.3476 11.8529 15.3768 12.0009 15.3768C12.149 15.3768 12.2956 15.3476 12.4324 15.2908C12.5691 15.234 12.6933 15.1508 12.7978 15.0459L16.5478 11.2959C16.7592 11.0846 16.8779 10.7979 16.8779 10.4991C16.8779 10.2002 16.7592 9.91353 16.5478 9.70219C16.3365 9.49084 16.0498 9.37211 15.7509 9.37211C15.4521 9.37211 15.1654 9.49084 14.9541 9.70219L13.125 11.5312V3.75C13.125 3.45163 13.0065 3.16548 12.7955 2.9545C12.5845 2.74353 12.2984 2.625 12 2.625C11.7016 2.625 11.4155 2.74353 11.2045 2.9545C10.9935 3.16548 10.875 3.45163 10.875 3.75V11.5312L9.04594 9.70406C8.83459 9.49272 8.54795 9.37399 8.24906 9.37399C7.95018 9.37399 7.66353 9.49272 7.45219 9.70406C7.24084 9.91541 7.12211 10.2021 7.12211 10.5009C7.12211 10.7998 7.24084 11.0865 7.45219 11.2978L11.2041 15.0459Z" fill="#AC9393"/>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                    <textarea class="mb-4 inp1 myt" placeholder="Message" rows="4"></textarea>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <div class="row check mb-1">
+                            <div class="col text-start">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <input id="chck" type="checkbox">
+                                    <div class="h-100 pt-2">
+                                        <label for="chck" class="mycheckbox"></label>
+                                    </div>
+                                    <label for="chck" class="text-start text_white1 fs16">By ticking this box, you agreeing to <a href="#" class="text-decoration-none text_dpink">	Terms & Conditions</a> and <a href="#" class="text-decoration-none text_dpink">Privacy <br class="desktop"> Policy</a>
+	                            </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center my-3">
+                        <div class="col-lg-6">
+                            <img src="media/recaptcha.png" class="img-fluid mb-4 d-block me-sm-auto">
+                        </div>
+                        <div class="col-lg-6">
+                            <button type="button" class="border_btn w-100 mb-xl-4">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer py-5 px-sm-0 px-3">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-sm-4">
+            <div class="d-flex flex-column flex-sm-row justify-content-between">
+                <div class="d-flex flex-column col-lg-3">
+                    <a href=""><img src="media/logoF.svg" class="img-fluid"></a>
+                    <a href=""><img src="media/Mastercard.png" class="img-fluid py-4"></a>
+                    <div class="fs16 text_dgrey desktop">© 2023 Marketing Mart. All Rights Reserved</div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-sm-5 gap-4 px-sm-5">
+                    <div class="col-lg-4">
+                        <div class="fs24 text_dgrey pb-sm-4 pb-3">Navigation</div>
+                        <div class="d-flex flex-row gap-5">
+                            <div class="">
+                                <li type="none" class=""><a href="" class="fs20 text_white1 text-decoration-none">About us</a></li>
+                                <li type="none" class="py-2"><a href="" class="fs20 text_white1 text-decoration-none">Contact us</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">FAQ</a></li>
+                            </div>
+                            <div class="">
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Privacy Policy</a></li>
+                                <li type="none" class="py-2"><a href="" class="fs20 text_white1 text-decoration-none">Log in/Sign up</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Terms & Conditions</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="fs24 text_dgrey pb-sm-4 pb-3">Services</div>
+                        <div class="d-flex flex-row gap-5">
+                            <div class="">
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">SEO</a></li>
+                                <li type="none" class="py-2"><a href="" class="fs20 text_white1 text-decoration-none">PPC</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">ORM</a></li>
+                            </div>
+                            <div class="">
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">UI/UX</a></li>
+                                <li type="none" class="py-2"><a href="" class="fs20 text_white1 text-decoration-none">SMM</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Email marketing</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="fs24 text_dgrey pb-sm-4 pb-3">Contact Details</div>
+                        <div class="d-flex flex-column">
+                            <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">+123 456 789 10</a></li>
+                            <li type="none" class="py-2"><a href="" class="fs20 text_white1 text-decoration-none">support@marketingmart.com</a></li>
+                            <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Insert Full Address Detail Here City, State, Zip Code</a></li>
+                        </div>
+                    </div>
+                    <div class="fs16 text_dgrey mobile">© 2023 Marketing Mart. All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js' integrity='sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' integrity='sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==' crossorigin='anonymous'></script>
+    <script>
+        $('#owl1').owlCarousel({
+            loop: false,
+            margin: 20,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1300: {
+                    items: 3,
+                    nav: true,
+                    loop: false,
+                    margin: 10,
+                    // center: true,
+                    // stagePadding: 150,
+                },
+                1500: {
+                    items: 4,
+                    nav: true,
+                    loop: false,
+                    center: false,
+                    // stagePadding: -250,
+                }
+            }
+        })
+    </script>
+    <script>
+        $('#owl2').owlCarousel({
+            loop: true,
+            margin: 20,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+
+        $('#sl2').change(function(e) {
+                var vale = '#' + $(this).val();
+                console.log(vale);
+                $('.tab-pane').removeClass('show active');
+                $(vale).addClass('show active');
+            })
+            // $("ul.nav-tabs a").click(function(e) {
+            //     e.preventDefault();
+            //     $(this).tab("show");
+            // });
+    </script>
+</body>
+
+</html>

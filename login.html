@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="w-100 position-fixed " id="navb">
+        <div class="col-xxl-9 col-xl-11 w90_hd mx-auto py-4">
+            <nav class="navbar navbar-expand-sm text-white py-xl-2">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand ">
+                        <img src="media/Logo.svg" class="pe-xl-4 desktop">
+                        <img src="media/logoM.svg" class="mobile ps-4 px-xl-0">
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center pe-4 px-xl-0 gap-3 ">
+                        <a href="" class="mobile">
+                            <img src="media/person.svg" class="">
+                        </a>
+                        <div class="mobile  text-decoration-none text_2E0A0A ffFS">
+                            <img src="media/cart.svg" class="carMbtn">
+                            <div class="boxB carM  order-2 order-sm-1">
+                                <div class="fs24 text_2E0A0A text-start position-relative ffFS">Cart
+                                    <a href="#" class="position-absolute  ic2"><img src="media/close.png" class="img-fluid"></a>
+                                </div>
+                                <p class="text_876868 fs18 text-start">You have x packages in your cart</p>
+                                <div class="d-flex flex-row justify-content-between align-items-center pt-3">
+                                    <div class="d-flex flex-column">
+                                        <div class="text_2E0A0A ffFS fs20">Service Name</div>
+                                        <div class="fs16 text_876868">Master, 3 Months</div>
+                                    </div>
+                                    <div class="d-flex flex-row gap-2 align-items-center">
+                                        <div class="text_2E0A0A ffFS fs20">£100,00</div>
+                                        <a href="#"><img src="media/close.png" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between py-4 align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <div class="text_2E0A0A ffFS fs20">Service Name</div>
+                                        <div class="fs16 text_876868">Master, 3 Months</div>
+                                    </div>
+                                    <div class="d-flex flex-row gap-2 align-items-center">
+                                        <div class="text_2E0A0A ffFS fs20">£100,00</div>
+                                        <a href="#"><img src="media/close.png" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <div class="text_2E0A0A ffFS fs20">Service Name</div>
+                                        <div class="fs16 text_876868">Master, 3 Months</div>
+                                    </div>
+                                    <div class="d-flex flex-row gap-2 align-items-center">
+                                        <div class="text_2E0A0A ffFS fs20">£100,00</div>
+                                        <a href="#"><img src="media/close.png" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                                <div class="pt-4">
+
+                                    <div class="d-flex flex-row justify-content-between align-items-center bord1">
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between pb-2 align-items-center  pt-4">
+                                        <div class="text_pink fs16">Total</div>
+                                        <div class="text_red fs20">£100,00</div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="red_btn border_btn mt-3">Secure checkout</button>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="media/menu_icon.svg" class="img-fluid">
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-between pt-sm-0 pt-3 px-3 px-xl-0 mt-4 mt-xl-0 py-4 py-xl-0" id="mynavbar">
+                        <ul class="navbar-nav nav1 text-xl-center gap-3 gap-xl-0">
+                            <li class="nav-item py-xl-2 position-relative text-xl-center">
+                                <a class="nav-link dropdown-toggle sv fsN18 d-flex gap-2 align-items-center p-0 text_white1 justify-content-xl-center justify-content-between int" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center">Services</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M15.2219 7.34689L9.59692 12.9719C9.51854 13.0506 9.42539 13.113 9.32283 13.1556C9.22027 13.1981 9.11032 13.2201 8.99927 13.2201C8.88822 13.2201 8.77826 13.1981 8.6757 13.1556C8.57314 13.113 8.48 13.0506 8.40161 12.9719L2.77661 7.34689C2.6181 7.18839 2.52905 6.9734 2.52905 6.74924C2.52905 6.52507 2.6181 6.31009 2.77661 6.15158C2.93512 5.99307 3.1501 5.90402 3.37427 5.90402C3.59843 5.90402 3.81341 5.99307 3.97192 6.15158L8.99997 11.1796L14.028 6.15088C14.1865 5.99237 14.4015 5.90332 14.6257 5.90332C14.8498 5.90332 15.0648 5.99237 15.2233 6.15088C15.3818 6.30939 15.4709 6.52437 15.4709 6.74853C15.4709 6.9727 15.3818 7.18768 15.2233 7.34619L15.2219 7.34689Z" fill="#F2F2F2"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu gb border-0 rounded-0 pe-xl-3 pb-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="py-xl-2 border-0">
+                                        <li class="">
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Search engine optimisation (SEO)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item  active" href="#">
+                                                <div>Pay-per-click (PPC)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Online reputation management (ORM)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Social media service</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Web design & development (UI/UX)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Email marketing</div>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fsN18 text_white1 int" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fsN18 text_white1 int" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item  border-0">
+                                <a class="nav-link fsN18 text_white1 int" href="#">Log in/sign up</a>
+                            </li>
+                            <li class="nav-item  border-0">
+                                <a class="nav-link fsN18 text_white1 int cartBTN" href="#">Cart<badge>(0)</badge></a>
+
+                                <div class="boxB cartB order-2 order-sm-1">
+                                    <div class="fs24 text_2E0A0A text-start position-relative ">Cart
+                                        <a href="#" class="position-absolute closeIcon"><img src="media/close.png" class="img-fluid"></a>
+                                    </div>
+                                    <p class="text_876868 fs18 text-start">You have x packages in your cart</p>
+                                    <div class="d-flex flex-row justify-content-between align-items-center pt-3">
+                                        <div class="d-flex flex-column">
+                                            <div class="text_2E0A0A ffFS fs20">Service Name</div>
+                                            <div class="fs16 text_876868">Master, 3 Months</div>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 align-items-center">
+                                            <div class="text_2E0A0A ffFS fs20">£100,00</div>
+                                            <a href="#"><img src="media/close.png" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between py-4 align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <div class="text_2E0A0A ffFS fs20">Service Name</div>
+                                            <div class="fs16 text_876868">Master, 3 Months</div>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 align-items-center">
+                                            <div class="text_2E0A0A ffFS fs20">£100,00</div>
+                                            <a href="#"><img src="media/close.png" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <div class="text_2E0A0A ffFS fs20">Service Name</div>
+                                            <div class="fs16 text_876868">Master, 3 Months</div>
+                                        </div>
+                                        <div class="d-flex flex-row gap-2 align-items-center">
+                                            <div class="text_2E0A0A ffFS fs20">£100,00</div>
+                                            <a href="#"><img src="media/close.png" class="img-fluid"></a>
+                                        </div>
+                                    </div>
+                                    <div class="pt-4">
+
+                                        <div class="d-flex flex-row justify-content-between align-items-center bord1">
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between pb-2 align-items-center  pt-4">
+                                            <div class="text_pink fs16">Total</div>
+                                            <div class="text_red fs20">£100,00</div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="red_btn border_btn mt-3">Secure checkout</button>
+                                </div>
+                            </li>
+                            <li class="nav-item  py-2 position-relative ">
+                                <a class="nav-link dropdown-toggle gbppe fsN18 d-flex gap-2 align-items-center p-0 text_white1 justify-content-xl-center justify-content-between int" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center">GBP</div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M15.2219 7.34689L9.59692 12.9719C9.51854 13.0506 9.42539 13.113 9.32283 13.1556C9.22027 13.1981 9.11032 13.2201 8.99927 13.2201C8.88822 13.2201 8.77826 13.1981 8.6757 13.1556C8.57314 13.113 8.48 13.0506 8.40161 12.9719L2.77661 7.34689C2.6181 7.18839 2.52905 6.9734 2.52905 6.74924C2.52905 6.52507 2.6181 6.31009 2.77661 6.15158C2.93512 5.99307 3.1501 5.90402 3.37427 5.90402C3.59843 5.90402 3.81341 5.99307 3.97192 6.15158L8.99997 11.1796L14.028 6.15088C14.1865 5.99237 14.4015 5.90332 14.6257 5.90332C14.8498 5.90332 15.0648 5.99237 15.2233 6.15088C15.3818 6.30939 15.4709 6.52437 15.4709 6.74853C15.4709 6.9727 15.3818 7.18768 15.2233 7.34619L15.2219 7.34689Z" fill="#F2F2F2"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu gb border-0 rounded-0 px-xl-0 gbpp" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="py-2 border-0 text-center">
+                                        <li>
+                                            <a class="px-0 d-flex gap-0 align-items-center text-center justify-content-center  fsN18 dropdown-item " href="#">
+                                                USD
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-0 align-items-center text-center justify-content-center fsN18 dropdown-item  active" href="#">
+                                            GBP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-0 align-items-center text-center justify-content-center fsN18 dropdown-item " href="#">
+                                                EU
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav nav2 align-items-center gap-2 desktop">
+                            <button type="button" class="border_btn px-3 wNav">Contact us</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid login p-0 overflow-hidden">
+        <div class="d-flex flex-sm-row flex-column justify-content-between logPad px-sm-0 px-4 overflow-hidden">
+            <div class="offset-sm-1 col-lg-5 overflow-hidden">
+                <div class="col-lg-10 mx-auto px-xl-3">
+                    <div class="fs56 text_white1 pb-4">Log in</div>
+                    <input type="email" name="" placeholder="Email" class="mb-4 inp1">
+                    <input type="password" name="" placeholder="Password" class="mb-4 inp1">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <div class="row check mb-1">
+                            <div class="col text-start">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <input id="chck" type="checkbox">
+                                    <div class="h-100 pt-2">
+                                        <label for="chck" class="mycheckbox"></label>
+                                    </div>
+                                    <label for="chck" class="text-start text_white1 fs16">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fs16 text_dpink">Forgot password?</div>
+                    </div>
+                    <button type="button" class="border_btn lgbtn w-100 my-4">Log in</button>
+                    <div class="fs18 text_white1">I don’t have an account. <a href="#" class="text-decoration-none text_dpink">Sign up</a></div>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-0 mt-sm-0 mt-5 text-end overflow-hidden">
+                <img src="media/log.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid footer py-5 overflow-hidden px-4 px-xl-0">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-4">
+            <div class="d-flex flex-column flex-sm-row justify-content-between">
+                <div class="d-flex flex-column col-lg-3">
+                    <a href=""><img src="media/logoF.svg" class="img-fluid"></a>
+                    <a href=""><img src="media/Mastercard.png" class="img-fluid py-4"></a>
+                    <div class="fs16 text_dgrey desktop">© 2023 Marketing Mart. All Rights Reserved</div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-xl-5 gap-3 px-xxl-5">
+                    <div class="col-xxl-5  col-xl-4 ps-xxl-4">
+                        <div class="fs24 text_dgrey pb-xl-4 pb-2">Navigation</div>
+                        <div class="d-flex flex-row gap-5">
+                            <div class="">
+                                <li type="none" class=""><a href="" class="fs20 text_white1 text-decoration-none">About
+                                        us</a></li>
+                                <li type="none" class="py-3"><a href="" class="fs20 text_white1 text-decoration-none">Contact us</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">FAQ</a></li>
+                            </div>
+                            <div class="">
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Privacy
+                                        Policy</a></li>
+                                <li type="none" class="py-3"><a href="" class="fs20 text_white1 text-decoration-none">Log in/Sign up</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Terms &
+                                        Conditions</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 w40 col-xl-3">
+                        <div class="fs24 text_dgrey pb-xl-4 pb-2">Services</div>
+                        <div class="d-flex flex-row gap-5">
+                            <div class="">
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">SEO</a></li>
+                                <li type="none" class="py-3"><a href="" class="fs20 text_white1 text-decoration-none">PPC</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">ORM</a></li>
+                            </div>
+                            <div class="">
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">UI/UX</a></li>
+                                <li type="none" class="py-3"><a href="" class="fs20 text_white1 text-decoration-none">SMM</a></li>
+                                <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Email
+                                        marketing</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="fs24 text_dgrey pb-xl-4 pb-2">Contact Details</div>
+                        <div class="d-flex flex-column">
+                            <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">+123 456 789 10</a>
+                            </li>
+                            <li type="none" class="py-3"><a href="" class="fs20 text_white1 text-decoration-none">support@marketingmart.com</a></li>
+                            <li type="none"><a href="" class="fs20 text_white1 text-decoration-none">Insert Full Address
+                                    Detail Here <br class="mobile"> City, State, Zip Code</a></li>
+                        </div>
+                    </div>
+                    <div class="fs16 text_dgrey mobile">© 2023 Marketing Mart. All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js' integrity='sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' integrity='sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==' crossorigin='anonymous'></script>
+    <script>
+        $('#owl1').owlCarousel({
+            loop: true,
+            margin: 15,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                    loop: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+        $('#owl22').owlCarousel({
+            loop: true,
+            margin: 15,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                    loop: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+    <script>
+        // JavaScript to change navbar color on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navb');
+            if (window.scrollY > 50) { // You can adjust the scroll position as needed
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        $(document).ready(function() {
+            $('.dropdown-toggle.sv').click(function() {
+                $('#mynavbar').removeClass('inchi2');
+
+                $('#mynavbar').toggleClass('inchi');
+            });
+            $('.dropdown-toggle.gbppe').click(function() {
+                $('#mynavbar').removeClass('inchi');
+
+                $('#mynavbar').toggleClass('inchi2');
+
+            });
+            var tog = false;
+            $('.navbar-toggler').click(function() {
+                if (tog) {
+                    $('.navbar-toggler img').attr('src', 'media/menu_icon.svg');
+                    tog = false;
+                } else {
+                    $('.navbar-toggler img').attr('src', 'media/menu_icon_cros.svg');
+                    tog = true;
+
+
+                }
+            });
+
+            $('.cartBTN').click(function() {
+                $('.cartB').toggleClass('show');
+            });
+
+            $('.closeIcon').click(function() {
+                $('.cartB').removeClass('show');
+            });
+
+            $('.carMbtn').click(function() {
+                $('.carM').toggleClass('show');
+            });
+
+            $('.ic2').click(function() {
+                $('.carM').removeClass('show');
+            });
+        })
+    </script>
+</body>
+
+</html>

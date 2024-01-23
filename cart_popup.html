@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Added to cart(Popup)</title>
+</head>
+
+<body>
+    <div class="w-100 position-fixed " id="navb">
+        <div class="col-xxl-9 col-xl-11 w90_hd mx-auto py-4">
+            <nav class="navbar navbar-expand-sm text-white py-xl-2">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand ">
+                        <img src="media/logo.svg" class="pe-xl-5 desktop">
+                        <img src="media/logoM.svg" class="mobile ps-4 px-xl-0">
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center pe-4 px-xl-0 gap-3 ">
+                        <a href="" class="mobile">
+                            <img src="media/person.svg" class="">
+                        </a>
+                        <a href="" class="mobile">
+                            <img src="media/cart.svg" class="">
+                        </a>
+                        <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="media/menu_icon.svg" class="img-fluid">
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-between pt-sm-0 pt-3 px-3 px-xl-0 mt-4 mt-xl-0 py-4 py-xl-0" id="mynavbar">
+                        <ul class="navbar-nav nav1 text-xl-center gap-3 gap-xl-0">
+                            <li class="nav-item py-2 position-relative text-xl-center">
+                                <a class="nav-link dropdown-toggle fsN18 d-flex gap-2 align-items-center p-0 text_white1 justify-content-xl-center justify-content-between int" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center">Services</div>
+                                    <img src="media/drop.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu gb border-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="py-2 border-0">
+                                        <li class="">
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Search engine optimisation (SEO)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item  active" href="#">
+                                                <div>Pay-per-click (PPC)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Online reputation management (ORM)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Social media service</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Web design & development (UI/UX)</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-2 align-items-center fsN18 dropdown-item " href="#">
+                                                <div>Email marketing</div>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fsN18 text_white1 int" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fsN18 text_white1 int" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item  border-0">
+                                <a class="nav-link fsN18 text_white1 int" href="#">Log in/sign up</a>
+                            </li>
+                            <li class="nav-item  border-0">
+                                <a class="nav-link fsN18 text_white1 int" href="#">Cart<badge>(0)</badge></a>
+                            </li>
+                            <li class="nav-item  py-2 position-relative ">
+                                <a class="nav-link dropdown-toggle fsN18 d-flex gap-2 align-items-center p-0 text_white1 justify-content-xl-center justify-content-between int" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="text-center">GBP</div>
+                                    <img src="media/drop.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu gb border-0" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="py-2 border-0 text-center">
+                                        <li>
+                                            <a class="px-0 d-flex gap-0 align-items-center text-center justify-content-center  fsN18 dropdown-item " href="#">
+                                                USD
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-0 align-items-center text-center justify-content-center fsN18 dropdown-item  active" href="#">
+                                            GBP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="px-0 d-flex gap-0 align-items-center text-center justify-content-center fsN18 dropdown-item " href="#">
+                                                EU
+                                            </a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav nav2 align-items-center gap-2 desktop">
+                            <button type="button" class="border_btn px-3 wNav">Contact us</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid signP pt-5">
+        <div class="col-xxl-9 col-xl-11 w90hd mx-auto py-sm-4 pt-3">
+            <div class="row align-items-center errorPad">
+                <div class="col-lg-6 text-sm-start text-center">
+                    <div class="col-lg-11 w90hd">
+                        <div class="text_grey fs72 py-4">Revolutionize marketing through digital channels</div>
+                        <p class="fs18 text_grey pb-sm-3 pb-2">Lorem ipsum dolor sit amet consectetur. Amet tortor proin sem nibh. Consequat quam gravida massa quis commodo. Nec et aliquam metus nam gravida volutpat vitae ligula quam. Duis faucibus aliquet ridiculus nulla faucibus vitae integer.
+                            Suspendisse sem adipiscing auctor pulvinar.</p>
+                        <div class="col-xxl-5 col-xl-6">
+                            <button type="button" class="border_btn w-100 px-3 wNav">Learn more about us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------Start of Model ------------------------->
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sucess
+            Popup</button>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md align-items-center">
+                <div class="modal-content">
+                    <div class="modal-header mx-auto">
+                        <h5 class="modal-title fs24 text_red">Added to cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body py-4">
+                        <div class="container-fluid px-lg-4">
+                            <button type="button" class="w-100 btn_redPop mb-3">View cart</button>
+                            <button type="button" class="w-100 btn_redPop">View cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------End of Model ------------------------->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+/* Home Page */
+
+.home1 {
+    background-image: url(media/home1bg.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.home2 {
+    background-image: url(media/home2bg.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.home3 {
+    background-image: url(media/home3bg.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.border_btn {
+    width: 271px;
+    height: 60px;
+    /* padding: 8px 0px; */
+    background-color: transparent;
+    color: #FFAEAE;
+    border: 0px;
+    position: relative;
+    font-family: Festina Lente;
+    font-size: 20px;
+}
+
+.border_btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(media/Buttonsbg.png);
+    background-size: 100% 100%;
+    left: 0;
+    top: 0;
+}
+
+.border_btn.red_btn {
+    color: #B30000;
+}
+
+.border_btn.red_btn::before {
+    background-image: url(media/Buttonsred.png);
+}
+
+.mycard1 {
+    width: 458px;
+    padding: 50px 40px;
+    background-repeat: no-repeat;
+    background-image: url(media/Cardsbg.png);
+    background-size: 100% 100%;
+    text-align: center;
+    background-position-x: center;
+    transition: all .3s;
+}
+
+.mycard1 .card-text {
+    padding: 10px 0px;
+}
+
+.home4 {
+    background-image: url(media/homeFAQbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.home5 {
+    background-image: url(media/homeCONbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.home5 input,
+.home5 textarea {
+    border: none;
+    border-bottom: 1px solid var(--Red-Shades-Cold-Sand, #AC9393);
+}
+
+.border_btn.subBtn {
+    width: 271px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.card2_hd {
+    padding: 40px 32px;
+    background-color: #FFAEAE;
+}
+
+.card2_hd img {
+    width: 64px !important;
+}
+
+.mycard1:hover {
+    transform: scale(1.05);
+}
+
+
+/* End Home Page */
+
+
+/* About Us */
+
+.c2 {
+    background: url(media/aboutCardsbg.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.ab1 {
+    background-image: url(media/ab1bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.ab2 {
+    background-image: url(media/ab2bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.ab3 {
+    background-image: url(media/ab3bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.ab4 .owl-item {
+    height: 312px !important;
+}
+
+.ab4 {
+    position: relative;
+}
+
+.ab4 .owl-nav {
+    position: absolute;
+    top: -180px;
+    right: 250px;
+    gap: 10px;
+    display: flex;
+}
+
+.ab4 .owl-nav button {
+    width: 60px;
+    height: 60px;
+    /* padding: 8px 0px; */
+    background-color: transparent;
+    color: #FFAEAE;
+    border: 0px;
+    position: relative;
+    font-family: Festina Lente;
+    font-size: 20px;
+}
+
+.ab4 .owl-nav button span {
+    display: none;
+}
+
+.ab4 .owl-nav button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(media/preb.png);
+    background-size: 100% 100%;
+    left: 0;
+    top: 0;
+}
+
+.ab4 .owl-nav button:nth-child(2) {
+    transform: rotate(180deg);
+}
+
+
+/* End About Us */
+
+
+/* ********************* SCREEN 1440px ******************* */
+
+@media screen and (max-width: 1440px) and (min-width: 1300px) {
+    .mycard1 {
+        width: 410px;
+    }
+    .border_btn.subBtn {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+    }
+    .img_fluid_1200 {
+        width: 100% !important;
+    }
+    .pa0 {
+        padding: 0px !important;
+    }
+}
+
+
+/* ********************* SCREEN 1280px ******************* */
+
+@media screen and (max-width: 1280px) and (min-width: 1000px) {
+    .mycard1 {
+        width: 365px;
+    }
+    .border_btn.subBtn {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+    }
+    .img_fluid_1200 {
+        width: 100% !important;
+    }
+}
+
+
+/* ********************* SCREEN MOBILE ******************* */
+
+@media screen and (max-width: 576px) {
+    .img_fluid_1200 {
+        width: 100% !important;
+    }
+    .home1 {
+        background-image: url(media/home1bgM.png);
+    }
+    .home2 {
+        background-image: url(media/home2bgM.png);
+    }
+    .home4 {
+        background-image: url(media/homeFAQbgm.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .home5 {
+        background-image: url(media/homeCONbgm.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .border_btn.subBtn {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.32px
+    }
+    .card2_hd img {
+        width: 48px !important;
+    }
+    .ab1 {
+        background-image: url(media/ab1bgm.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .ab2 {
+        background-image: url(media/ab2bgm.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .ab3 {
+        background-image: url(media/ab3bgm.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .ab4 .owl-item {
+        height: 267px !important;
+    }
+    .card2_hd {
+        padding: 20px 32px;
+        background-color: #FFAEAE;
+    }
+}
